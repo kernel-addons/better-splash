@@ -1,0 +1,14 @@
+{
+    "name": "BetterSplash",
+    "id": "0strencher.better-splash",
+    "description": "Enhances the splash screen of discord by adding useful features for developers.",
+    "version": "1.0.0",
+    "dependencies": [],
+    "config": {
+        "PAUSE_ON_START": false,
+        "DEVTOOLS_BUTTON": true,
+        "PAUSE_BUTTON": true,
+        "SKIP_BUTTON": true,
+        "CLOSE_BUTTON": true
+    }
+}
