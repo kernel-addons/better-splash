@@ -1,4 +1,4 @@
-import {createElement} from "../react-utils";
+import { createElement } from "../react-utils.js";
 
 export function CloseIcon(props) {
     return createElement("svg", {

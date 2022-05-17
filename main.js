@@ -1,4 +1,4 @@
-const {BrowserWindow, ipcMain, app} = require("electron");
+const { BrowserWindow, ipcMain, app } = require("electron");
 
 let splashWin = null;
 

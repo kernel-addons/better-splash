@@ -1,5 +1,5 @@
-const {contextBridge, ipcRenderer} = require("electron");
-const {PAUSE_ON_START} = require("./index.json").config;
+const { contextBridge, ipcRenderer } = require("electron");
+const { PAUSE_ON_START } = require("./index.json").config;
 
 let initialize = null;
 let shouldPause = PAUSE_ON_START;
