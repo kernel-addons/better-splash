@@ -42,13 +42,13 @@ export class ReactComponent {
         this.props = props;
     }
 
-    isMounted() { return !!this._isMounted; }
+    isMounted() {return !!this._isMounted;}
 
-    forceUpdate(callback) { this.updater.enqueueForceUpdate(this, callback, "forceUpdate"); }
+    forceUpdate(callback) {this.updater.enqueueForceUpdate(this, callback, "forceUpdate");}
 
-    isReactComponent() { return true; }
+    isReactComponent() {return true;}
 
-    replaceState(state, callback) { this.updater.enqueueReplaceState(this, callback, state); }
+    replaceState(state, callback) {this.updater.enqueueReplaceState(this, callback, state);}
 
     setState(state, callback) {
         if (typeof state !== "object" && typeof state !== "function" && state != null) throw "Silly.";

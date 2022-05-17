@@ -1,5 +1,5 @@
 import Actions from "./components/actions.js";
-import { createElement, setElementSymbol } from "./react-utils.js";
+import {createElement, setElementSymbol} from "./react-utils.js";
 import TreeSearcher from "./treesearcher.js";
 import tooltip from "./components/tooltip.js";
 
@@ -34,7 +34,7 @@ const styles = /*inline-css*/`
 ` + tooltip;
 
 export default new class BetterSplash {
-    get config() { return window.BetterSplash.getConfig(); }
+    get config() {return window.BetterSplash.getConfig();}
 
     start() {
         if (typeof DiscordSplash === "undefined") return;
@@ -45,11 +45,11 @@ export default new class BetterSplash {
             .walk("_reactRootContainer", "_internalRoot", "current")
             .find((e) => e?.type?.displayName === "Splash")
             .value();
-
+        
         setElementSymbol(
             new TreeSearcher(Splash, "react")
                 .walk("type", "prototype", "render")
-                .call({ state: { update: { status: "" } } })
+                .call({state: {update: {status: ""}}})
                 .walk("$$typeof")
                 .value()
         );
@@ -66,7 +66,7 @@ export default new class BetterSplash {
                 const root = ret?.props?.children;
                 if (!root) return ret;
 
-                ret.props.children = [root, createElement(Actions, { appState: _this.state.update.status, key: "controls" })];
+                ret.props.children = [root, createElement(Actions, {appState: _this.state.update.status, key: "controls"})];
 
                 return ret;
             }
@@ -79,8 +79,8 @@ export default new class BetterSplash {
             textContent: styles
         }));
     }
-
+    
     stop() {
-
+        
     }
 }
