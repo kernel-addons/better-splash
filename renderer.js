@@ -1,7 +1,7 @@
-import Actions from "./components/actions";
-import {createElement, setElementSymbol} from "./react-utils";
-import TreeSearcher from "./treesearcher";
-import tooltip from "./components/tooltip";
+import Actions from "./components/actions.js";
+import {createElement, setElementSymbol} from "./react-utils.js";
+import TreeSearcher from "./treesearcher.js";
+import tooltip from "./components/tooltip.js";
 
 const styles = /*inline-css*/`
     .splash-controls {

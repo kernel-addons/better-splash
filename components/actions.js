@@ -1,5 +1,5 @@
-import {createElement, ReactComponent} from "../react-utils";
-import {CloseIcon, PlayIcon, SkipIcon, TerminalIcon} from "./icons";
+import {createElement, ReactComponent} from "../react-utils.js";
+import {CloseIcon, PlayIcon, SkipIcon, TerminalIcon} from "./icons.js";
 
 
 export default class Actions extends ReactComponent {
